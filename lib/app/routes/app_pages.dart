@@ -6,6 +6,8 @@ import 'package:flutter_challenges/app/modules/home/bindings/home_binding.dart';
 import 'package:flutter_challenges/app/modules/home/views/home_view.dart';
 import 'package:flutter_challenges/app/modules/index/bindings/index_binding.dart';
 import 'package:flutter_challenges/app/modules/index/views/index_view.dart';
+import 'package:flutter_challenges/app/modules/lollipop/bindings/lollipop_binding.dart';
+import 'package:flutter_challenges/app/modules/lollipop/views/lollipop_view.dart';
 
 part 'app_routes.dart';
 
@@ -27,6 +29,11 @@ class AppPages {
       name: _Paths.FOOD,
       page: () => FoodView(),
       binding: FoodBinding(),
+    ),
+    GetPage(
+      name: _Paths.LOLLIPOP,
+      page: () => LollipopView(),
+      binding: LollipopBinding(),
     ),
   ];
 }
